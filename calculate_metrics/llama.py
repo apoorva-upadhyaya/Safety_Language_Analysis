@@ -48,14 +48,14 @@ warnings.filterwarnings("ignore")
 CONFIG = dict(
     languages     = ["ar","de", "en", "hi", "id", "ru", "vi", "zh"],
     target_layers = list(range(32)),
-    top_k         = 20,
+    top_k         =  5,
 
     # Which of the 3 saved token positions to use
     # 0=third-last, 1=second-last, 2=last
     TOKEN_IDX     = 1,
 
     encoded_dir      = "../sae_encoded_all",
-    label_dir        = "../predictions_all/eval_gemma/results",
+    label_dir        = "../predictions_all/eval_llm/results",
     csv_dir          = "../predictions_all/",
     output_dir       = "feature_analysis_v3_correct_threshold",
 
